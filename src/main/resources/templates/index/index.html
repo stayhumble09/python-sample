@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" th:href="@{css/index.css}"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/layout.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-<div>
-    <ul>
-        <li class="visual01"></li>
-        <li class="visual02"></li>
-        <li class="visual03"></li>
+<div class="visual-slider">
+    <ul class="visual-list swiper-wrapper">
+        <li class="visual01 swiper-slide"></li>
+        <li class="visual02 swiper-slide"></li>
+        <li class="visual03 swiper-slide"></li>
     </ul>
 </div>
+<script>
+    const swiper = new Swiper(".visual-slider", {
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 3000,
+        },
+        effect: "fade",
+    });
+</script>
 </body>
 </html>

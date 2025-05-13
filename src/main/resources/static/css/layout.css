@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.visual-list li {
+    list-style: none;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.visual-slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.visual-list .visual01 {
+    background-image: url(../images/visual01.jpg);
+}
+
+.visual-list .visual02 {
+    background-image: url(../images/visual02.jpg);
+}
+
+.visual-list .visual03 {
+    background-image: url(../images/visual03.jpg);
+}
