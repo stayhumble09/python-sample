@@ -11,24 +11,45 @@
 <body>
 <div class="visual-slider">
   <ul class="visual-list swiper-wrapper">
-    <li class="visual01 swiper-slide"></li>
-    <li class="visual02 swiper-slide"></li>
-    <li class="visual03 swiper-slide"></li>
+    <li class="visual01 swiper-slide">
+      <div class="message">
+      <h2>고윤정01</h2>
+      <p>쏼라쏼라</p>
+      </div>
+    </li>
+    <li class="visual02 swiper-slide">
+      <div class="message">
+      <h2>고윤정02</h2>
+      <p>쏼라쏼라02</p>
+      </div>
+    </li>
+    <li class="visual03 swiper-slide">
+      <div class="message">
+      <h2>고윤정03</h2>
+      <p>쏼라쏼라03</p>
+      </div>
+    </li>
   </ul>
+  <button class="prev btn">prev</button>
+  <button class="next btn">next</button>
   <div class="pagination"></div>
 </div>
 <script>
   const swiper = new Swiper(".visual-slider", {
     loop: true,
-    speed: 2000,
+    speed: 1000,
     autoplay: {
       delay: 3000,
     },
-    effect: "fade",
+    effect: "fade", //cube,
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".visual-slider .next",
+      prevEl: ".visual-slider .prev",
     },
   });
 </script>
